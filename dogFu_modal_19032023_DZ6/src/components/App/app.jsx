@@ -30,7 +30,6 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentUser, setCurrentUser] = useState(null)
   const [isLoading, setIsLoading] = useState(true);
-  // const debounceSearchQuery = useDebounce(searchQuery, 300);
   useDebounce(setSearchQuery, 300, []);
 
   const [favorites, setFavorites] = useState([]);

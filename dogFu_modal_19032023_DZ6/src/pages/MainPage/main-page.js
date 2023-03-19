@@ -4,6 +4,7 @@ import { NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { FaqPage } from '../../pages/FAQPage/faq-page';
 import { FavoritePage } from '../../pages/FavoritePage/favorite-page';
 import { Button } from "@mui/material";
+import './main-page.css';
 
 export function MainPage() {
 
@@ -16,8 +17,8 @@ export function MainPage() {
                 <SignupButton/>
                 <SigninButton/>
 
-                <NavLink to="/login/favorites">Избранное</NavLink>
-                <NavLink to="/login/faq">FAQ</NavLink>
+                {/* <NavLink to="/login/favorites">Избранное</NavLink>
+                <NavLink to="/login/faq">FAQ</NavLink> */}
 
                 <Button onClick={() => navigate("/login/favorites")}>
                     Избранное
